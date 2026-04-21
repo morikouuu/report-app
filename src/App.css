@@ -1,0 +1,83 @@
+.app {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 24px;
+}
+
+.editor-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-height: 70vh;
+}
+
+.panel h2 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.form label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.form input,
+.form textarea {
+	flex: 1;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 15px;
+	line-height: 1.6;
+	box-sizing: border-box;
+}
+
+.form textarea {
+	resize: vertical;
+	min-height: 90px;
+}
+
+.preview {
+	flex: 1;
+	padding: 12px 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: auto;
+	line-height: 1.7;
+	background: #fff;
+	text-align: left;
+}
+
+.preview h1,
+.preview h2,
+.preview h3 {
+	margin-top: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+@media (max-width: 900px) {
+	.editor-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.panel {
+		min-height: 40vh;
+	}
+}
