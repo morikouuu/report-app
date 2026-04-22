@@ -18,18 +18,18 @@ function App() {
 		thoughts: string,
 		questions: string,
 	) =>
-		`# 日報（${date}）
+		`# 日報${date}
 
 ## 今日やったこと
 ${learning || "- "}
 
-## 感想・学び
+## わかったこと
 ${understand || "- "}
 
-## 課題・反省
+## わからなかったこと
 ${noIdea || "- "}
 
-## 明日の予定
+## 感想
 ${thoughts || "- "}
 
 ## 質問
@@ -57,7 +57,7 @@ ${questions || "- "}`;
 							<textarea
 								value={learning}
 								onChange={(e) => setLearning(e.target.value)}
-								placeholder="例: ログイン画面の実装"
+								placeholder="例: Javaの講義"
 							/>
 						</label>
 						<label>
@@ -65,7 +65,7 @@ ${questions || "- "}`;
 							<textarea
 								value={understand}
 								onChange={(e) => setUnderstand(e.target.value)}
-								placeholder="例: 実装に時間がかかった点"
+								placeholder="例: Spring Bootの使い方"
 							/>
 						</label>
 						<label>
