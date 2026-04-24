@@ -115,5 +115,4 @@ ${questions || "- "}`;
 		</div>
 	);
 }
-
 export default App;
